@@ -1183,7 +1183,7 @@ final class ByteStringBuilder extends Builder[Byte, ByteString] {
           _length += seq.length
         }
       case _ =>
-        super.++=(xs)
+        super.addAll(xs)
     }
     this
   }
